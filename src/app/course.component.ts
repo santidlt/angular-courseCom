@@ -14,13 +14,11 @@ import { Component } from '@angular/core'
     </ul>
     `
 })
-
 export class CourseComponent{
     title = "list of courses"
     courses: any    //example. (irl youll have objects instead of str)
 
     //logic for calling an HTTP service XXXX TOO MUCH ISSUESSSS
-
 
     constructor(service: CourseService){
         this.courses = service.getCourses()
